@@ -1,0 +1,11 @@
+# requiring the environment of Ruby 2.3.x
+image: ruby:2.3
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  artifacts:
+    paths:
+      - pub
+  only:
+      - master # this job will affect only the 'master' branch
