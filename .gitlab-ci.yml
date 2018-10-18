@@ -5,7 +5,7 @@ image: ruby:2.3
 pages:
   stage: deploy
   script:
-    - mkdir -p public && mv pub/ public/
+    - mkdir -p public && mv aurorafoss/ public/
   artifacts:
     paths:
       - public
